@@ -15,12 +15,32 @@ module.exports = {
       colors:{
         'new_black': '#0b0d17',
         'new_blue': '#d0d6f9',
-        'new_cream': '#ffffff'
+        'new_cream': '#ffffff',
+        'new_gray': '#d0d6f9',
       },
       backgroundImage: {
         'home-desktop': "url('/home/background-home-desktop.jpg')",
         'home-tablet': "url('/home/background-home-tablet.jpg')",
         'home-mobile': "url('/home/background-home-mobile.jpg')",
+      },
+      fontFamily: {
+        'Barlow': ['Barlow Condensed', 'sans-serif'],
+        'Bellefair': ['Bellefair', 'serif'],
+      },
+      fontSize: {
+        '2.5xl': '1.8rem',
+        '7.5xl': '80px',
+        '10xl': '9.375rem',
+      },
+      letterSpacing: {
+        'ss': '1.25px',
+        'xm': '2px',
+        'sm': '2.7px',
+        'md': '3.375px',
+        'xl': '4.725px',
+      },
+      spacing:{
+        '74': '274px',
       }
     },
   },

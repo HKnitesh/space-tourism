@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
 @tailwind base;
 @tailwind components;
 
@@ -6,11 +9,20 @@
     margin: 0;
 }
 
+.center{
+    @apply flex items-center justify-center;
+}
 .bgi{
    @apply bg-cover bg-center bg-no-repeat;
 }
 .home_bg{
     @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-desktop_hqft1w.jpg')] md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-tablet_lkydc3.jpg')] bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-mobile_grlms0.jpg')];
+}
+.nav_link{
+    @apply flex-row gap-2.5 font-Barlow tracking-[2.8px] shrink-0 text-base font-normal center;
+}
+.hover{
+    @apply absolute bottom-0 shrink-0 h-1 bg-white;
 }
 @tailwind utilities;
 

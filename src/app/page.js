@@ -1,12 +1,33 @@
-
+import Nav from "./components/Nav"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <main 
-      // className="flex text-new_blue lg:bg-[url('/home/background-home-desktop.jpg')] md:bg-[url('/home/background-home-tablet.jpg')] bg-[url('/home/background-home-mobile.jpg')] bgi h-screen "
-      className="flex bgi h-screen text-new_cream home_bg"
-    >
-Hare krishna
+    <main className="flex flex-col bgi h-screen text-new_cream home_bg">
+      <Nav />
+      <div className="flex lg:flex-row flex-col justify-between font-Barlow items-center lg:mx-40 lg:mt-40 md:mt-28 mt-12">
+        {/* home information */}
+        <div className="flex flex-col text-new_gray justify-center lg:items-start items-center lg:gap-6 md:gap5 gap-4">
+          <h3 className=" font-normal lg:text-2.5xl  lg:tracking-xl md:text-xl md:tracking-md text-base tracking-sm">
+            SO, YOU WANT TO TRAVEL TO
+          </h3>
+          <h1 className="text-white font-Bellefair font-normal md:text-10xl text-7.5xl md:leading-[150px] leading-[100px]">
+            SPACE
+          </h1>
+          <p className="font-normal lg:text-lg  lg:leading-8 md:text-base md:leading-7 text-[15px] tracking-wider leading-6 lg:w-[36%] lg:mx-0 md:mx-40 mx-10 lg:text-left text-center">
+            Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on
+            the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+          </p>
+        </div>
+        <Link href='/destination'
+        className="center rounded-full bg-white lg:w-74 lg:h-74 md:w-60 md:h-60 w-36 h-36 absolute md:bottom-32 bottom-10 lg:right-40 lg:bottom-40"
+        >
+          <span className=" text-new_black font-Bellefair font-normal md:text-3xl md:tracking-xm text-xl tracking-ss">
+            EXPLORE
+          </span>
+        </Link>
+
+      </div>
     </main>
   )
 }
