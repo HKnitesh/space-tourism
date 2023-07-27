@@ -12,6 +12,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        'new_black': '#0b0d17',
+        'new_blue': '#d0d6f9',
+        'new_cream': '#ffffff'
+      },
+      backgroundImage: {
+        'home-desktop': "url('/home/background-home-desktop.jpg')",
+        'home-tablet': "url('/home/background-home-tablet.jpg')",
+        'home-mobile': "url('/home/background-home-mobile.jpg')",
+      }
     },
   },
   plugins: [],
