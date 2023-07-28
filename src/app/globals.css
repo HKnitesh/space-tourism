@@ -13,16 +13,47 @@
     @apply flex items-center justify-center;
 }
 .bgi{
-   @apply bg-cover bg-center bg-no-repeat;
+   @apply bg-cover bg-center bg-no-repeat h-screen;
 }
 .home_bg{
-    @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-desktop_hqft1w.jpg')] md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-tablet_lkydc3.jpg')] bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-mobile_grlms0.jpg')];
+    @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-desktop_hqft1w.jpg')] 
+    md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-tablet_lkydc3.jpg')] 
+    bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/home/background-home-mobile_grlms0.jpg')];
+}
+.big_btn{
+    @apply center rounded-full bg-white lg:w-72 lg:h-72 md:w-60 md:h-60 w-36 h-36 absolute md:bottom-32 bottom-10 lg:right-40 lg:bottom-40 
+    outline-none hover:outline-black/40 lg:hover:outline-[63px] md:hover:outline-[50px] hover:outline-[38px]
+    text-new_black font-Bellefair font-normal md:text-3xl md:tracking-xm text-xl tracking-ss;
+}
+.destination_bg {
+    @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431528/spaceturism_assets/destination/background-destination-desktop_etiocv.jpg')] 
+    md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431529/spaceturism_assets/destination/background-destination-tablet_zy4ynm.jpg')] 
+    bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431529/spaceturism_assets/destination/background-destination-mobile_ihkadj.jpg')];
+   
+}
+
+.technology_bg{
+    @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/technology/background-technology-desktop_j8me7p.jpg')] 
+    md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431531/spaceturism_assets/technology/background-technology-tablet_nk06pl.jpg')]
+     bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431530/spaceturism_assets/technology/background-technology-mobile_joyxnp.jpg')];
+}
+.crew_bg{
+    @apply lg:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431527/spaceturism_assets/crew/background-crew-desktop_mx9bi4.jpg')] 
+    md:bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431527/spaceturism_assets/crew/background-crew-tablet_q0qcst.jpg')] 
+    bg-[url('https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431527/spaceturism_assets/crew/background-crew-mobile_syvgiu.jpg')];
 }
 .nav_link{
     @apply flex-row gap-2.5 font-Barlow tracking-[2.8px] shrink-0 text-base font-normal center;
 }
 .hover{
     @apply absolute bottom-0 shrink-0 h-1 bg-white;
+}
+
+.heading-01{
+    @apply flex flex-row font-Barlow font-normal lg:text-2.5xl lg:tracking-xl md:text-xl md:tracking-md text-base tracking-sm lg:gap-7 md:gap-5 gap-3 text-white;
+}
+.planet{
+    @apply shrink-0 lg:mt-0 lg:ml-5 lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] h-44 w-44;
 }
 @tailwind utilities;
 

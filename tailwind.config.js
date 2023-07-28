@@ -17,6 +17,7 @@ module.exports = {
         'new_blue': '#d0d6f9',
         'new_cream': '#ffffff',
         'new_gray': '#d0d6f9',
+        'bg_line': '#383B4B',
       },
       backgroundImage: {
         'home-desktop': "url('/home/background-home-desktop.jpg')",
@@ -35,6 +36,7 @@ module.exports = {
       letterSpacing: {
         'ss': '1.25px',
         'xm': '2px',
+        '2xm': '2.362px',
         'sm': '2.7px',
         'md': '3.375px',
         'xl': '4.725px',

@@ -24,11 +24,12 @@ export default function Nav() {
         <>
             <div className="flex flex-row md:ml-10 mt-8 ml-6 items-center justify-between">
                 <Image
-                    src='https://res.cloudinary.com/drw8eqw3i/image/upload/v1690435932/spaceturism_assets/star_icon_qk5bqz.png'
+                    
+                    src='https://res.cloudinary.com/drw8eqw3i/image/upload/v1690522320/spaceturism_assets/Group_2_Copy_ghejw3.svg'
                     height={48}
                     width={48}
                     alt="star-icon"
-                    className=" w-10 h-10 md:w-12 md:h-12"
+                    className=" w-10 h-10 md:w-12 md:h-12 "
                 />
                 <div className="flex flex-row items-center">
 
@@ -59,6 +60,7 @@ export default function Nav() {
                             <span>DESTINATION</span>
                             {underline01 ? <div className="hover md:w-24 lg:w-32 opacity-50"></div> : null}
                             {active01 ? <div className="hover md:w-24 lg:w-32"></div> : null}
+                           
                         </Link>
                         <Link
                             href='/crew'
@@ -86,7 +88,7 @@ export default function Nav() {
                         </Link>
                     </div>
                 </div>
-                <div class="md:hidden items-center mr-6" onClick={() => { setToggle(true) }}>
+                <div class="md:hidden items-center mr-6 text-new_gray" onClick={() => { setToggle(true) }}>
 
                     <LiaBarsSolid className="w-8 h-8 font-extrabold" />
                 </div>

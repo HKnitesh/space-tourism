@@ -20,9 +20,9 @@ export default function Home() {
           </p>
         </div>
         <Link href='/destination'
-        className="center rounded-full bg-white lg:w-74 lg:h-74 md:w-60 md:h-60 w-36 h-36 absolute md:bottom-32 bottom-10 lg:right-40 lg:bottom-40"
+          className="big_btn"
         >
-          <span className=" text-new_black font-Bellefair font-normal md:text-3xl md:tracking-xm text-xl tracking-ss">
+          <span className="">
             EXPLORE
           </span>
         </Link>
