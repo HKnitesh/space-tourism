@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex flex-col bgi h-screen text-new_cream home_bg">
+    <main className="flex flex-col bgi h-screen text-new_cream home_bg">    
       <Nav />
       <div className="flex lg:flex-row flex-col justify-between font-Barlow items-center lg:mx-40 lg:mt-40 md:mt-28 mt-12">
         {/* home information */}
