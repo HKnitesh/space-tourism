@@ -69,10 +69,12 @@ export default function Destination() {
         setTitan(true);
     }
 
+   
+
     return (
         <div className="flex flex-col bgi destination_bg">
-            <Nav />
-            <div className="center flex-col lg:mx-40 lg:my-16 md:mt-7 mt-5 text-white  md:items-start ">
+            <Nav/>
+            <div className="center flex-col lg:mx-40 lg:mt-16 md:mt-7 mt-5 text-white  md:items-start ">
                 <h3 className="heading-01 md:ml-8 lg:ml-0">
                     <span className="font-bold opacity-25">01</span>
                     <span>PICK YOUR DESTINATION</span>
@@ -80,38 +82,40 @@ export default function Destination() {
 
                 {/* main */}
                 <div className="center lg:flex-row flex-col md:mt-10 mt-5 lg:gap-48 md:gap-10 gap-5">
-                    { moon ?<Image
+                    {/* planet images */}
+                    {moon ? <Image
                         src={data[0].images}
                         height={445}
                         width={445}
                         className="planet"
                         alt={data[0].name}
-                    /> : null }
+                    /> : null}
 
-                    {mars ?<Image
+                    {mars ? <Image
                         src={data[1].images}
                         height={445}
                         width={445}
                         className="planet"
                         alt={data[1].name}
-                    /> : null }
+                    /> : null}
 
-                    {europa ?<Image
+                    {europa ? <Image
                         src={data[2].images}
                         height={445}
                         width={445}
                         className="planet"
                         alt={data[2].name}
-                    /> : null }
+                    /> : null}
 
-                    { titan ?<Image
+                    {titan ? <Image
                         src={data[3].images}
                         height={445}
                         width={445}
                         className="planet"
                         alt={data[3].name}
-                    /> : null }
+                    /> : null}
 
+                    {/* button's */}
                     <div className="flex-col lg:justify-start lg:items-start center lg:gap-6 md:gap-8 gap-5">
                         <div className="center flex-row gap-5 font-Barlow md:text-base font-normal md:tracking-sm text-sm tracking-2xm text-new_gray ">
 
@@ -152,11 +156,11 @@ export default function Destination() {
                         </div>
                         {/* moon detail */}
                         {moon ? <>
-                            <h1 className="flex font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
+                            <h1 className=" font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
                                 {data[0].name}
                             </h1>
 
-                            <p className="flex text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
+                            <p className=" text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
                                 {data[0].description}
                             </p>
 
@@ -168,7 +172,7 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             AVG. DISTANCE
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className=" font-Bellefair font-normal text-2.5xl">
                                             {data[0].distance}
                                         </h4>
                                     </div>
@@ -177,22 +181,22 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             EST. TRAVEL TIME
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className=" font-Bellefair font-normal text-2.5xl">
                                             {data[0].travel}
                                         </h4>
                                     </div>
 
                                 </div>
                             </div>
-                        </> : null } 
+                        </> : null}
 
                         {/* mars detail */}
-                        {mars ?  <>
-                            <h1 className="flex font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
+                        {mars ? <>
+                            <h1 className=" font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
                                 {data[1].name}
                             </h1>
 
-                            <p className="flex text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
+                            <p className=" text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
                                 {data[1].description}
                             </p>
 
@@ -204,7 +208,7 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             AVG. DISTANCE
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className="font-Bellefair font-normal text-2.5xl">
                                             {data[1].distance}
                                         </h4>
                                     </div>
@@ -213,22 +217,22 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             EST. TRAVEL TIME
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className="font-Bellefair font-normal text-2.5xl">
                                             {data[1].travel}
                                         </h4>
                                     </div>
 
                                 </div>
                             </div>
-                        </> : null  } 
+                        </> : null}
 
                         {/* europa detail */}
                         {europa ? <>
-                            <h1 className="flex font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
+                            <h1 className=" font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
                                 {data[2].name}
                             </h1>
 
-                            <p className="flex text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
+                            <p className=" text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
                                 {data[2].description}
                             </p>
 
@@ -240,7 +244,7 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             AVG. DISTANCE
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className=" font-Bellefair font-normal text-2.5xl">
                                             {data[2].distance}
                                         </h4>
                                     </div>
@@ -249,22 +253,22 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             EST. TRAVEL TIME
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className=" font-Bellefair font-normal text-2.5xl">
                                             {data[2].travel}
                                         </h4>
                                     </div>
 
                                 </div>
                             </div>
-                        </> : null} 
+                        </> : null}
 
                         {/* titan detail */}
                         {titan ? <>
-                            <h1 className="flex font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
+                            <h1 className=" font-Bellefair font-normal lg:text-8xl md:text-[80px] text-6xl">
                                 {data[3].name}
                             </h1>
 
-                            <p className="flex text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
+                            <p className=" text-new_gray font-Barlow font-normal md:text-lg text-base lg:text-left w-[70%] text-center">
                                 {data[3].description}
                             </p>
 
@@ -276,7 +280,7 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             AVG. DISTANCE
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className="font-Bellefair font-normal text-2.5xl">
                                             {data[3].distance}
                                         </h4>
                                     </div>
@@ -285,14 +289,14 @@ export default function Destination() {
                                         <p className=" text-new_gray font-normal font-Barlow tracking-2xm text-sm">
                                             EST. TRAVEL TIME
                                         </p>
-                                        <h4 className="flex font-Bellefair font-normal text-2.5xl">
+                                        <h4 className=" font-Bellefair font-normal text-2.5xl">
                                             {data[3].travel}
                                         </h4>
                                     </div>
 
                                 </div>
                             </div>
-                        </> : null} 
+                        </> : null}
 
                     </div>
 

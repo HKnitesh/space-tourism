@@ -1,9 +1,125 @@
+'use client'
+import { useState } from "react";
 import Nav from "../components/Nav";
+import Image from "next/image";
 
-export default function Crew() {
+const data =
+    [
+        {
+            "name": "Douglas Hurley",
+            "images": 'https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431527/spaceturism_assets/crew/image-douglas-hurley_uw567h.png',
+            "role": "Commander",
+            "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+        },
+        {
+            "name": "Mark Shuttleworth",
+            "images": 'https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431528/spaceturism_assets/crew/image-mark-shuttleworth_bkjgst.png',
+            "role": "Mission Specialist",
+            "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+        },
+        {
+            "name": "Victor Glover",
+            "images": 'https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431528/spaceturism_assets/crew/image-victor-glover_ywqh3y.png',
+            "role": "Pilot",
+            "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
+        },
+        {
+            "name": "Anousheh Ansari",
+            "images": 'https://res.cloudinary.com/drw8eqw3i/image/upload/v1690431527/spaceturism_assets/crew/image-anousheh-ansari_jhbfgu.png',
+            "role": "Flight Engineer",
+            "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+        }
+    ]
+
+
+export default function Destination() {
+
+
+    const [commander, setCommander] = useState(true);
+    const [specialist, setSpecialist] = useState(false);
+    const [pilot, setPilot] = useState(false);
+    const [engineer, setEngineer] = useState(false);
+
+    const Commander = () => {
+        setCommander(<div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white/30 "></div>);
+        setSpecialist(false);
+        setPilot(false);
+        setEngineer(false);
+    }
+    const Specialist = () => {
+        setCommander(false);
+        setSpecialist(true);
+        setPilot(false);
+        setEngineer(false);
+    }
+    const Pilot = () => {
+        setCommander(false);
+        setSpecialist(false);
+        setPilot(true);
+        setEngineer(false);
+    }
+    const Engineer = () => {
+        setCommander(false);
+        setSpecialist(false);
+        setPilot(false);
+        setEngineer(true);
+    }
+
+
+
     return (
         <div className="flex flex-col bgi crew_bg">
             <Nav />
+            <h3 className="heading-01 mt-5  md:hidden  center">
+                <span className="font-bold opacity-25">02</span>
+                <span>MEET YOUR CREW</span>
+            </h3>
+            <div className="flex items-center md:relative md:flex-col flex-col-reverse lg:flex-row h-full lg:mx-40 md:mt-12 mt-5 text-white ">
+
+                
+
+                <div className="center flex-col md:justify-start md:items-start">
+                    <h3 className="heading-01 md:ml-8 lg:ml-0 md:flex hidden">
+                        <span className="font-bold opacity-25">02</span>
+                        <span>MEET YOUR CREW</span>
+                    </h3>
+
+                    <div className="center flex-col font-Bellefair text-white font-normal lg:gap-4 md:gap-2 lg:my-32 lg:mb-0 md:mt-16 lg:items-start md:items-center">
+                        <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
+                            {data[0].role}
+                        </h2>
+
+                        <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
+                            {data[0].name}
+                        </h1>
+                        <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left mt-2">
+                            {data[0].bio}
+                        </p>
+                        <div className="flex flex-row gap-5 lg:mt-20 md:mt-4 ">
+                            <button onClick={Commander}>
+                                {commander ?
+                                    <div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white/30 "></div>
+                                    : <div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white "></div>
+                                }
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <Image
+                    src={data[0].images}
+                    height={50}
+                    width={400}
+                    className="shrink-0 md:absolute md:bottom-0 lg:right-0 md:w-[350px] w-[175px] "
+                    alt={data[0].name}
+                    
+                />
+                <p></p>
+            </div>
+
         </div>
     );
 }

@@ -30,6 +30,7 @@ module.exports = {
       },
       fontSize: {
         '2.5xl': '1.8rem',
+        '5.5xl': '56px',
         '7.5xl': '80px',
         '10xl': '9.375rem',
       },
@@ -42,6 +43,7 @@ module.exports = {
         'xl': '4.725px',
       },
       spacing:{
+        
         '74': '274px',
       }
     },
