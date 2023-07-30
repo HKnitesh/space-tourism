@@ -32,7 +32,7 @@ const data =
     ]
 
 
-export default function Destination() {
+export default function Crew() {
 
 
     const [commander, setCommander] = useState(true);
@@ -41,7 +41,7 @@ export default function Destination() {
     const [engineer, setEngineer] = useState(false);
 
     const Commander = () => {
-        setCommander(<div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white/30 "></div>);
+        setCommander(true);
         setSpecialist(false);
         setPilot(false);
         setEngineer(false);
@@ -70,36 +70,107 @@ export default function Destination() {
     return (
         <div className="flex flex-col bgi crew_bg">
             <Nav />
-            <h3 className="heading-01 mt-5  md:hidden  center">
-                <span className="font-bold opacity-25">02</span>
-                <span>MEET YOUR CREW</span>
-            </h3>
-            <div className="flex items-center md:relative md:flex-col flex-col-reverse lg:flex-row h-full lg:mx-40 md:mt-12 mt-5 text-white ">
 
-                
+            <div className="flex items-center md:relative flex-col lg:flex-row h-full lg:mx-40 md:mt-12 mt-5 text-white ">
+
+
 
                 <div className="center flex-col md:justify-start md:items-start">
-                    <h3 className="heading-01 md:ml-8 lg:ml-0 md:flex hidden">
+                    <h3 className="heading-01 md:ml-8 lg:ml-0 ">
                         <span className="font-bold opacity-25">02</span>
                         <span>MEET YOUR CREW</span>
                     </h3>
 
-                    <div className="center flex-col font-Bellefair text-white font-normal lg:gap-4 md:gap-2 lg:my-32 lg:mb-0 md:mt-16 lg:items-start md:items-center">
-                        <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
-                            {data[0].role}
-                        </h2>
+                    <div className="center flex-col font-Bellefair text-white font-normal lg:gap-4 md:gap-2 lg:my-32 lg:mb-0 md:mt-16 mt-6 lg:items-start md:items-center">
 
-                        <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
-                            {data[0].name}
-                        </h1>
-                        <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left mt-2">
-                            {data[0].bio}
-                        </p>
-                        <div className="flex flex-row gap-5 lg:mt-20 md:mt-4 ">
+                        {/* commander */}
+                        {commander ? <>
+                            <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
+                                {data[0].role}
+                            </h2>
+
+                            <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
+                                {data[0].name}
+                            </h1>
+                            <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left md:mt-2">
+                                {data[0].bio}
+                            </p>
+                        </> : null}
+
+                        {/* Mission Specialist */}
+                        {specialist ? <>
+                            <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
+                                {data[1].role}
+                            </h2>
+
+                            <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
+                                {data[1].name}
+                            </h1>
+                            <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left md:mt-2">
+                                {data[1].bio}
+                            </p>
+                        </> : null}
+
+                        {/* pilot */}
+                        {pilot ? <>
+                            <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
+                                {data[2].role}
+                            </h2>
+
+                            <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
+                                {data[2].name}
+                            </h1>
+                            <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left md:mt-2">
+                                {data[2].bio}
+                            </p>
+                        </> : null}
+
+                        {/* Flight Engineer */}
+                        {engineer ? <>
+                            <h2 className=" opacity-50 lg:text-3xl md:text-2xl text-base uppercase">
+                                {data[3].role}
+                            </h2>
+
+                            <h1 className="lg:text-6xl md:text-[40px] text-2xl leading-normal uppercase">
+                                {data[3].name}
+                            </h1>
+                            <p className="text-new_gray tracking-wide font-Barlow lg:text-lg md:text-base text-sm leading-7 lg:w-5/12 lg:mx-0 md:mx-48 mx-10 text-center lg:text-left md:mt-2">
+                                {data[3].bio}
+                            </p>
+                        </> : null}
+
+                        {/* buttons */}
+                        <div className="flex flex-row lg:gap-8 gap-5 lg:mt-16 md:mt-8 mt-4 ">
+
+                            {/* Specialist */}
+                            <button onClick={Specialist}>
+                                {specialist ?
+                                    <div className="crew_btn bg-white outline-black/50"></div>
+                                    : <div className="crew_btn bg-white/30 "></div>
+                                }
+                            </button>
+
+                            {/* commander */}
                             <button onClick={Commander}>
                                 {commander ?
-                                    <div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white/30 "></div>
-                                    : <div className="lg:h-4 lg:w-4 h-2.5 w-2.5  rounded-full bg-white "></div>
+                                    <div className="crew_btn bg-white outline-black/50"></div>
+                                    : <div className="crew_btn bg-white/30 "></div>
+                                }
+                            </button>
+
+                            {/* Pilot */}
+                            <button onClick={Pilot}>
+                                {pilot ?
+                                    <div className="crew_btn bg-white outline-black/50"></div>
+                                    : <div className="crew_btn bg-white/30 "></div>
+                                }
+                            </button>
+
+                            {/* Engineer */}
+                            <button onClick={Engineer}>
+                                {engineer ?
+                                    <div className="crew_btn bg-white outline-black/50"></div>
+                                    : <div className="crew_btn bg-white/30 "></div>
                                 }
                             </button>
                         </div>
@@ -109,15 +180,39 @@ export default function Destination() {
 
                 </div>
 
-                <Image
+                {commander ? <Image
                     src={data[0].images}
                     height={50}
                     width={400}
-                    className="shrink-0 md:absolute md:bottom-0 lg:right-0 md:w-[350px] w-[175px] "
+                    className="shrink-0 absolute bottom-0 lg:right-0 md:w-[350px] w-[200px] "
                     alt={data[0].name}
-                    
-                />
-                <p></p>
+
+                /> : null}
+                {specialist ? <Image
+                    src={data[1].images}
+                    height={50}
+                    width={400}
+                    className="shrink-0 absolute bottom-0 lg:right-0 md:w-[300px] w-[150px] "
+                    alt={data[1].name}
+
+                /> : null}
+                {pilot ? <Image
+                    src={data[2].images}
+                    height={50}
+                    width={400}
+                    className="shrink-0 absolute bottom-0 lg:right-0 md:w-[350px] w-[200px] "
+                    alt={data[2].name}
+
+                /> : null}
+                {engineer ? <Image
+                    src={data[3].images}
+                    height={50}
+                    width={400}
+                    className="shrink-0 absolute bottom-0 lg:right-0 md:w-[350px] w-[200px] "
+                    alt={data[3].name}
+
+                /> : null}
+
             </div>
 
         </div>

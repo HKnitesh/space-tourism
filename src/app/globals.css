@@ -55,5 +55,11 @@
 .planet{
     @apply shrink-0 lg:mt-0 lg:ml-5 lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] h-44 w-44;
 }
+.crew_btn{
+    @apply lg:h-8 lg:w-8 h-5 w-5 rounded-full outline-none  outline-4;
+}
+.tech_btn{
+    @apply center text-base font-normal shrink-0 border border-white/25 rounded-full w-10 h-10 md:h-14 md:w-14 md:text-2xl lg:h-20  lg:w-20  lg:text-[32px];
+}
 @tailwind utilities;
 

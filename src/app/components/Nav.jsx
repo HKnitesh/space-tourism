@@ -33,7 +33,7 @@ export default function Nav() {
                 />
                 <div className="flex flex-row items-center">
 
-                    <div className=" shrink-0 lg:w-[525px] left-40 absolute hidden lg:flex h-0 border-white border border-solid opacity-25 z-10"></div>
+                    <div className=" shrink-0 lg:w-[425px] left-40 absolute hidden lg:flex h-0 border-white border border-solid opacity-25 z-10"></div>
                     {/* desktop */}
                     <div className="hidden md:flex md:flex-row flex-col lg:w-[900px] md:w-[450px] md:h-24 shrink-0 bg-white/[0.04] z-0 backdrop-blur-2xl center text-white lg:gap-12 md:gap-5">
                         <Link

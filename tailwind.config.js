@@ -14,7 +14,6 @@ module.exports = {
       },
       colors:{
         'new_black': '#0b0d17',
-        'new_blue': '#d0d6f9',
         'new_cream': '#ffffff',
         'new_gray': '#d0d6f9',
         'bg_line': '#383B4B',
@@ -30,6 +29,7 @@ module.exports = {
       },
       fontSize: {
         '2.5xl': '1.8rem',
+        '4.5xl': '40px',
         '5.5xl': '56px',
         '7.5xl': '80px',
         '10xl': '9.375rem',
