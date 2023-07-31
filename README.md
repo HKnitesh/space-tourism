@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### The challenge
 
-## Learn More
+Users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![large screen](./public/screen%20shots/large%20screen%2002(laptop).png)
+![large screen](./public/screen%20shots/large%20screen%20(laptop).png)
+![mid screen (tabs)](./public/screen%20shots/mid%20screen%2002(tabs).png)
+![mobile](./public/screen%20shots/mobile.png)
 
-## Deploy on Vercel
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+
+
+
+### Links
+
+- Solution URL: [Git repo](https://github.com/HKnitesh/space-tourism)
+- Live Site URL: [Space Tourism](https://hknitesh.github.io/space-tourism/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - For CSS
+
+
+
+
+
+### Useful resources
+
+- [Learn Next Js](https://nextjs.org/learn/foundations/about-nextjs) - This helped me to learn Next Js. 
+- [Tailwind CSS](https://tailwindcss.com/) - This is an amazing CSS library, I had used you should also try it.
+- [To Learn JavaScript](https://youtu.be/xJq0EQMFGyg) - Learn Development with Hitesh Choudhary.
+
+
+
+## Author
+
+- Website - [Nitesh Kumar Chaurasiya](https://hknitesh.github.io/Resume/)
+- Frontend Mentor - [@HKnitesh](https://www.frontendmentor.io/profile/HKnitesh)
+- LinkedIn - [@nitesh](https://www.linkedin.com/in/nitesh2023/)
+
+
+
